@@ -9,6 +9,9 @@ export default function Page({params}: { params: { id: string } }) {
     const {data: movie, isLoading, isError} = useGetMovieQuery(params.id);
     const {data: comments} = useGetMovieCommentsQuery(params.id)
     if (isLoading) return <Spinner/>
+    if (isError) return (<>
+        <h1>Error Encountered</h1>
+        <p>An error has occurred. Please try again later.</p></>)
     return (<div>
         {movie && <MovieCard movie={movie} variant={'big'}></MovieCard>}
         {comments && comments.length > 0 && comments.map((review: Review) => {

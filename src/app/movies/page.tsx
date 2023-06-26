@@ -30,6 +30,9 @@ export default function MoviesPage() {
     if (mergedMovies && genre) {
         mergedMovies = mergedMovies.filter((movie) => movie.genre === genre)
     }
+    if (isError || isCinemasError) return (<>
+        <h1>Error Encountered</h1>
+        <p>An error has occurred. Please try again later.</p></>)
     if (isLoading || isCinemasLoading) return <Spinner/>;
     return !!mergedMovies && cinemas && <div className={styles.moviePageContainer}>
         <MovieFilters genres={genres} cinemas={cinemas}/>
@@ -38,7 +41,7 @@ export default function MoviesPage() {
             <MovieCard
                 variant={'small'}
                 className={styles.movieCard} key={movie.id}
-                movie={movie}></MovieCard>): <h2>По критериям поиска ничего не найдено</h2>}
+                movie={movie}></MovieCard>) : <h2>По критериям поиска ничего не найдено</h2>}
         </div>
 
     </div>
