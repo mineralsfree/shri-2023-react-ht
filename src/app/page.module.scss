@@ -1,0 +1,17 @@
+@use '../colors';
+.content{
+    background: #F5F5F5;
+    padding: 100px 32px 10px;
+    min-height: calc(100vh - 72px);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 32px;
+    background: colors.$color-background-dark;
+    color: colors.$color-text-white;
+    font-size: 20px;
+}

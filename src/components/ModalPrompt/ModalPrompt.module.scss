@@ -1,0 +1,69 @@
+@use '../../colors';
+
+.background {
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+}
+
+.modalContainer {
+  border-radius: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 24px;
+  background: colors.$color-background-white;
+
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header {
+  color: colors.$color-text-dark;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.button {
+  border: none;
+  outline: none;
+  height: 40px;
+  padding: 8px 16px;
+  display: flex;
+  border-radius: 8px;
+  align-items: center;
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.buttonConfirm {
+  color: colors.$color-text-white;
+  background: colors.$color-button-primary;
+  outline: colors.$color-button-primary;
+
+}
+.buttonClose {
+  margin-left: 10px;
+  background: colors.$color-background-white;
+  color: colors.$color-button-primary;
+  border: 1px solid  colors.$color-button-primary;
+  outline: colors.$color-button-primary;
+}
+.text{
+  margin-top: 15px;
+}
+.buttonContainer{
+  margin-top: 24px;
+  display: flex;
+  justify-content: flex-start;
+}

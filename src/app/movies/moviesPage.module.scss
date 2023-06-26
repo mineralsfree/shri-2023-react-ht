@@ -1,0 +1,16 @@
+.moviePageContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.movieCard {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.movieFilterContainer {
+  width: 74%;
+  display: flex;
+  flex-direction: column;
+
+}

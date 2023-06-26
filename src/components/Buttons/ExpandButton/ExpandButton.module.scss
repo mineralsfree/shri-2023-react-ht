@@ -1,0 +1,14 @@
+.button {
+  border: none;
+  transition: transform 0.3s ease-in-out;
+
+  background: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+.expanded{
+  transform: rotate(180deg);
+
+}

@@ -1,0 +1,17 @@
+@use '../../colors';
+.stepper{
+ &-container{
+   svg {
+     cursor: pointer;
+   }
+   display: flex;
+ }
+  &-button{
+    border: none;
+    outline: none;
+    background: none;
+  }
+}
+.count{
+  padding: 0 8px;
+}

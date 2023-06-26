@@ -1,0 +1,24 @@
+@use '../../colors';
+.movie-filter {
+  &-container {
+    background: colors.$color-background-white;
+    width: 25%;
+    height: calc(100vh - 181px); // experiment with this value, try changing to 110vh
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    top: 100px;
+    padding: 24px;
+  }
+}
+.title{
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.label{
+  margin-top: 16px;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
