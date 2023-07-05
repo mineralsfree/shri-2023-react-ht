@@ -1,5 +1,5 @@
-@use '../../colors';
-.container{
+@use "../../colors";
+.container {
   display: flex;
   flex-direction: row;
   background: colors.$color-background-white;
@@ -7,19 +7,19 @@
   border-radius: 8px;
   padding: 24px;
 }
-.header{
+.header {
   display: flex;
   justify-content: space-between;
 }
-.text{
+.text {
   margin-top: 16px;
 }
-.image{
+.image {
   width: 100px;
   height: 100px;
   border-radius: 8px;
 }
-.info{
+.info {
   margin-left: 32px;
   width: 100%;
 }

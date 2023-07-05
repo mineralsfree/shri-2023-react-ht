@@ -1,7 +1,7 @@
-@use '../../colors';
+@use "../../colors";
 
 .title {
-  color: var(--text-primary, #1B1F23);
+  color: var(--text-primary, #1b1f23);
   font-size: 32px;
   font-weight: 600;
   line-height: 32px;
@@ -26,7 +26,7 @@
 }
 
 .content {
-  color: var(--text-primary, #1B1F23);
+  color: var(--text-primary, #1b1f23);
   font-size: 16px;
   line-height: 24px;
 }

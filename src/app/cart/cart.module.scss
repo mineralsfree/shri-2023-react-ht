@@ -1,5 +1,5 @@
 @use "../../colors";
-.bottom{
+.bottom {
   display: flex;
   justify-content: space-between;
   background: colors.$color-background-white;
@@ -7,7 +7,7 @@
   border-radius: 8px;
   margin-top: 16px;
 }
-.sum{
+.sum {
   font-weight: 600;
   font-size: 20px;
 }

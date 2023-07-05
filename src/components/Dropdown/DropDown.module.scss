@@ -1,14 +1,13 @@
-@use '../../colors';
+@use "../../colors";
 
 .input {
-  border: 1px solid #E1E3E6;
+  border: 1px solid #e1e3e6;
   border-radius: 8px;
   display: flex;
   justify-content: space-between;
   padding: 10px 16px;
   cursor: pointer;
   transition: border-color 0.3s ease-in-out;
-
 }
 
 .expanded {
